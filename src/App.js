@@ -1,24 +1,8 @@
 import "./App.css";
-// import Svg from "./components/SVG/Svg";
 import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import BgImg from "./images/interior.jpg";
-// import Page4 from "./components/Pages/Page4";
-// import Page3 from "./components/Pages/Page3";
-// import Page2 from "./components/Pages/Page2";
-// import Page1 from "./components/Pages/Page1";
-// import Page5 from "./components/Pages/Page5";
-// import Page6 from "./components/Pages/Page6";
-// import Page7 from "./components/Pages/Page7";
-// import Title1 from "./components/Titles/Title1";
-// import Title2 from "./components/Titles/Title2";
-// import Title3 from "./components/Titles/Title3";
-// import Title4 from "./components/Titles/Title4";
-// import Title6 from "./components/Titles/Title6";
-// import Title5 from "./components/Titles/Title5";
-// import Title7 from "./components/Titles/Title7";
 import Heading1 from "./components/Headings/Heading1";
 import Heading2 from "./components/Headings/Heading2";
 import Heading3 from "./components/Headings/Heading3";
@@ -26,7 +10,6 @@ import Heading5 from "./components/Headings/Heading5";
 import Heading6 from "./components/Headings/Heading6";
 import Heading7 from "./components/Headings/Heading7";
 import Heading4 from "./components/Headings/Heading4";
-// import Small from "./components/Sizes/Small";
 
 gsap.registerPlugin(ScrollTrigger);
 
