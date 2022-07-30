@@ -18,6 +18,13 @@ import Title4 from "./components/Titles/Title4";
 import Title6 from "./components/Titles/Title6";
 import Title5 from "./components/Titles/Title5";
 import Title7 from "./components/Titles/Title7";
+import Page4 from "./components/Pages/Page4";
+import Page3 from "./components/Pages/Page3";
+import Page2 from "./components/Pages/Page2";
+import Page1 from "./components/Pages/Page1";
+import Page5 from "./components/Pages/Page5";
+import Page6 from "./components/Pages/Page6";
+import Page7 from "./components/Pages/Page7";
 
 gsap.registerPlugin(ScrollTrigger);
 
