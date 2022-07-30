@@ -10,6 +10,14 @@ import Heading5 from "./components/Headings/Heading5";
 import Heading6 from "./components/Headings/Heading6";
 import Heading7 from "./components/Headings/Heading7";
 import Heading4 from "./components/Headings/Heading4";
+import Svg from "./components/SVG/Svg";
+import Title1 from "./components/Titles/Title1";
+import Title2 from "./components/Titles/Title2";
+import Title3 from "./components/Titles/Title3";
+import Title4 from "./components/Titles/Title4";
+import Title6 from "./components/Titles/Title6";
+import Title5 from "./components/Titles/Title5";
+import Title7 from "./components/Titles/Title7";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,7 +82,29 @@ function App() {
                      <Heading7></Heading7>
                   )}
                </div>
-               {/*  */}
+               <div id="svg-container">
+                  <div id="svg-text">
+                     {textChange >= 0 && textChange < 16 ? (
+                        <Title1></Title1>
+                     ) : textChange >= 16 && textChange < 33 ? (
+                        <Title2></Title2>
+                     ) : textChange >= 33 && textChange < 50 ? (
+                        <Title3></Title3>
+                     ) : textChange >= 50 && textChange < 65 ? (
+                        <Title4></Title4>
+                     ) : textChange >= 65 && textChange < 83 ? (
+                        <Title5></Title5>
+                     ) : textChange >= 50 && textChange < 99 ? (
+                        <Title6></Title6>
+                     ) : (
+                        <Title7></Title7>
+                     )}
+                  </div>
+                  <Svg
+                     scrollResult={scrollResult}
+                     textChange={textChange}
+                  ></Svg>
+               </div>
             </div>
          </div>
       </div>
