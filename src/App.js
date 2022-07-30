@@ -25,6 +25,7 @@ import Page1 from "./components/Pages/Page1";
 import Page5 from "./components/Pages/Page5";
 import Page6 from "./components/Pages/Page6";
 import Page7 from "./components/Pages/Page7";
+import BgImg from "./images/interior.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,6 +113,65 @@ function App() {
                      textChange={textChange}
                   ></Svg>
                </div>
+            </div>
+            <div
+               id="right"
+               style={{
+                  background:
+                     textChange >= 0 && textChange < 16
+                        ? "#CCCCCE"
+                        : textChange >= 16 && textChange < 33
+                        ? "#1C0362"
+                        : textChange >= 33 && textChange < 50
+                        ? "#141748"
+                        : textChange >= 50 && textChange < 65
+                        ? "#0D131B"
+                        : textChange >= 65 && textChange < 83
+                        ? "#22CFEA"
+                        : textChange >= 100
+                        ? "#00B769"
+                        : "",
+                  backgroundImage:
+                     textChange >= 83 && textChange < 100
+                        ? `url(${BgImg})`
+                        : "",
+                  backgroundSize:
+                     textChange >= 83 && textChange < 100 ? "cover" : "",
+                  backgroundRepeat:
+                     textChange >= 83 && textChange < 100 ? "noRepeat" : "",
+                  backgroundAttachment:
+                     textChange >= 83 && textChange < 100 ? "fixed" : "",
+               }}
+            >
+               {textChange >= 0 && textChange < 16 ? (
+                  <div id="one" className="page">
+                     <Page1></Page1>
+                  </div>
+               ) : textChange >= 16 && textChange < 33 ? (
+                  <div id="two" className="page">
+                     <Page2></Page2>
+                  </div>
+               ) : textChange >= 33 && textChange < 50 ? (
+                  <div id="three" className="page">
+                     <Page3></Page3>
+                  </div>
+               ) : textChange >= 50 && textChange < 65 ? (
+                  <div id="four" className="page">
+                     <Page4></Page4>
+                  </div>
+               ) : textChange >= 65 && textChange < 83 ? (
+                  <div id="five" className="page">
+                     <Page5></Page5>
+                  </div>
+               ) : textChange >= 83 && textChange < 100 ? (
+                  <div id="six" className="page">
+                     <Page6></Page6>
+                  </div>
+               ) : (
+                  <div id="seven" className="page">
+                     <Page7></Page7>
+                  </div>
+               )}
             </div>
          </div>
       </div>
