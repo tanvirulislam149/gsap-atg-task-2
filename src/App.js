@@ -26,6 +26,7 @@ import Page5 from "./components/Pages/Page5";
 import Page6 from "./components/Pages/Page6";
 import Page7 from "./components/Pages/Page7";
 import BgImg from "./images/interior.jpg";
+import Small from "./components/Sizes/Small";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -173,6 +174,9 @@ function App() {
                   </div>
                )}
             </div>
+         </div>
+         <div id="small">
+            <Small></Small>
          </div>
       </div>
    );

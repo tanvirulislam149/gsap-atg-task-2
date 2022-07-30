@@ -1,32 +1,3 @@
-/* scrollbar section starts */
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-
-/* Track */
-::-webkit-scrollbar-track {
-  /* background: #0D131B; */
-  background: transparent;
-  position: absolute;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover  {
-  background: #555;
-}
-
-/* scrollbar section ends */
-
 body{
   overflow-x: hidden;
 }
@@ -44,6 +15,31 @@ svg {
   top: 15vh;
   transition: all 500ms;
 }
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  position: absolute;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 
 #left {
   background-color: #16263B;
